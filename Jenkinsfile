@@ -5,7 +5,7 @@ git'https://github.com/vijay21094/spring-hibernate-maven-webapp'
 }
 stage('clean')
 {
-  def mvnHome = tool name: 'maven2', type: 'maven'
+  def mvnHome = tool name: 'maven3', type: 'maven'
   bat " ${mvnHome}/bin/mvn clean "
 }
 }
