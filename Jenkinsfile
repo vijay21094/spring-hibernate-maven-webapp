@@ -3,9 +3,9 @@ stage('SCM checkout')
 { 
 git'https://github.com/vijay21094/spring-hibernate-maven-webapp'
 }
-stage('Compile-package')
+stage('clean')
 {
-  def M2_Home = tool name: 'maven3', type: 'maven'
-  bat " ${M_Home}/bin/mvn package "
+  def mHome = tool name: 'maven3', type: 'maven'
+  bat " ${mHome}/bin/mvn clean "
 }
 }
